@@ -21,4 +21,11 @@ return {
 			},
 		},
 	},
+	--  {
+	--  	"keaising/im-select.nvim",
+	--  	opt = {},
+	--  	config = function(_, opts)
+	--  		require("im_select").setup(opts)
+	--  	end,
+	--  },
 }
