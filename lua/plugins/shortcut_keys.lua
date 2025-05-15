@@ -21,11 +21,18 @@ return {
 			},
 		},
 	},
-	--  {
-	--  	"keaising/im-select.nvim",
-	--  	opt = {},
-	--  	config = function(_, opts)
-	--  		require("im_select").setup(opts)
-	--  	end,
-	--  },
+	{
+		-- 自动切换输入法，但是要 在电脑上装 im-select
+		"keaising/im-select.nvim",
+		opts = {
+			default_im_select = "com.apple.keylayout.ABC",
+			default_command = "im-select",
+			set_default_events = { "VimEnter", "FocusGained", "InsertLeave", "CmdlineLeave" },
+			set_previous_events = { "InsertEnter" },
+			async_switch_im = true,
+		},
+		config = function(_, opts)
+			require("im_select").setup(opts)
+		end,
+	},
 }

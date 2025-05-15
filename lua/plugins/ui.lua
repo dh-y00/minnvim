@@ -1,5 +1,22 @@
 return {
 	{
+		--
+		"HiPhish/rainbow-delimiters.nvim",
+		submodules = false,
+		main = "rainbow-delimiters.setup",
+		opts = {},
+	},
+	{
+		-- good message notify and alert menu
+		"folke/noice.nvim",
+		event = "VeryLazy",
+		dependencies = {
+			"MunifTanjim/nui.nvim",
+			"rcarriga/nvim-notify",
+		},
+		opts = {},
+	},
+	{
 		-- 这边可以先了解一下 vim 中的 bufferline 是什么
 		-- 而这个插件就是深化，加强 vim 原有中的 bufferline
 		"akinsho/bufferline.nvim",

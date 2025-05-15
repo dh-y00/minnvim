@@ -60,3 +60,6 @@ vim.keymap.set({ "n", "v" }, "<Down>", "<Nop>")
 
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+
+vim.keymap.set("n", "<leader>ww", ":w<CR>", { desc = "保存" })
+vim.keymap.set("n", "<leader>qq", ":q<CR>", { desc = "退出" })
